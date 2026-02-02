@@ -10,39 +10,69 @@
 
 <style>
     body {
-        background-color: red;
+        /* Degradê suave e romântico no fundo */
+        background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+        min-height: 100vh; /* Ocupa toda a altura da tela */
+        margin: 0;
+        display: flex;
+        justify-content: center; /* Centraliza horizontalmente */
+        align-items: center; /* Centraliza verticalmente */
+        font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
     }
+
     .painel {
-        width: 500px;
-        height: 1350px;
-        background-color: white;
-        border: 2px solid rgb(0, 0, 0);
+        width: 90%;
+        max-width: 600px; /* Limita a largura para não ficar muito esticado */
+        height: auto; /* Altura automática para se ajustar ao conteúdo */
+        background-color: rgba(255, 255, 255, 0.95); /* Branco com leve transparência */
+        border-radius: 30px; /* Bordas bem arredondadas */
+        /* Sombra suave em vez de borda preta */
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 50px auto;
-        font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+        padding: 40px;
         text-align: center;
-        padding-top: 50px;
         position: relative;
     }
+
     .painel h1 {
         font-family: 'Great Vibes', cursive;
         font-weight: bold;
-        padding: 0 20px;
+        color: #d32f2f; /* Vermelho escuro elegante */
+        font-size: 2rem;
+        line-height: 1.5;
+        margin: 20px 0;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
     }
+
+    .painel img {
+        max-width: 100%;
+        border-radius: 20px; /* Arredonda as imagens */
+        margin: 15px 0;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
     .clique-aqui-btn {
-       padding: 10px 20px;
+       padding: 15px 40px;
        margin: 20px 0;
-       background-color: red;
-       border: 1px solid white;
-       border-radius: 10px;
+       background-color: #ff4d4d;
+       border: none;
+       border-radius: 50px; /* Formato de pílula */
        color: white;
        cursor: pointer;
-       font-size: 16px;
+       font-size: 18px;
        font-family: inherit;
        text-decoration: none;
+       transition: all 0.3s ease; /* Animação suave */
+       box-shadow: 0 4px 15px rgba(255, 77, 77, 0.4);
+    }
+
+    .clique-aqui-btn:hover {
+        background-color: #ff1a1a;
+        transform: scale(1.05); /* Aumenta um pouquinho ao passar o mouse */
+        box-shadow: 0 6px 20px rgba(255, 77, 77, 0.6);
     }
 </style>
 
@@ -58,6 +88,8 @@
             Cada detalhe seu me encanta: o brilho dos seus olhos, a suavidade do seu toque, a força da sua presença. Ao seu lado, eu descobri que o verdadeiro amor não é feito apenas de palavras bonitas, mas de gestos, de cuidado, de cumplicidade e de uma vontade infinita de estar junto.
             Eu te amo com a intensidade de quem sabe que encontrou sua alma gêmea. Prometo continuar sendo o homem que te admira, que te respeita e que se apaixona por você todos os dias, como se fosse sempre a primeira vez.
             Você é meu lar, minha inspiração e meu futuro. E eu só quero passar o resto da minha vida te mostrando, em cada detalhe, o quanto você é essencial para mim.</h1>
+
+        <h1>Eu Te Amo Muito</h1>
 
         <a href="https://www.youtube.com/watch?v=aR-V1qi_W_M&list=RDaR-V1qi_W_M&start_radio=1" target="_blank" class="clique-aqui-btn">clique aqui</a>
 
